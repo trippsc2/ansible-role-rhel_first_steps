@@ -96,24 +96,3 @@
     name: '*'
     state: latest
     update_only: true
-
-- name: Change to graphical target
-  when:
-    - rhel_is_workstation
-  block:
-    - name: Get current default target
-      become: true
-      check_mode: false
-      ansible.builtin.command: systemctl get-default
-      register: _rhel_default_target
-      changed_when: false
-      tags:
-        - always
-        - skip_ansible_lint
-
-    - name: Set graphical target
-      when:
-        - "'graphical' not in _rhel_default_target.stdout"
-      become: true
-      ansible.builtin.command: systemctl set-default graphical.target
-      changed_when: true

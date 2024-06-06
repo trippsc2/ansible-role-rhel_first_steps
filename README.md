@@ -25,7 +25,6 @@ This role performs first steps on a freshly installed RHEL-based system.
 | rhel_subscription_syspurpose_service_level_agreement | System purpose service level agreement. Required for RHEL only. | str | no |  |  |
 | rhel_subscription_syspurpose_sync | System purpose sync. Required for RHEL only. | bool | no |  | false |
 | rhel_subscription_pool | Subscription pool. Required for RHEL only. | str | no |  |  |
-| rhel_is_workstation | Whether the system is a workstation and should start a graphical environment. | bool | no |  | false |
 
 
 ## License

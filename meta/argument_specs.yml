@@ -48,9 +48,3 @@ argument_specs:
         description:
           - Subscription pool.
           - Required for RHEL only.
-      rhel_is_workstation:
-        type: bool
-        required: false
-        default: false
-        description:
-          - Whether the system is a workstation and should start a graphical environment.
