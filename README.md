@@ -1,13 +1,13 @@
 <!-- BEGIN_ANSIBLE_DOCS -->
 
-# Ansible Role: trippsc2.rhel_first_steps
-This role performs first steps on a freshly installed RHEL-based system.
+# Ansible Role: ansible-role-rhel_first_steps
+DEPRECATED: Use trippsc2.first_steps.rhel instead.
 
 ## Requirements
 
 | Platform | Versions |
 | -------- | -------- |
-| EL | 8, 9 |
+| EL | <ul><li>8</li><li>9</li></ul> |
 
 ## Dependencies
 

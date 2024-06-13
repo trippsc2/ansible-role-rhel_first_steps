@@ -3,11 +3,11 @@ galaxy_info:
   author: Jim Tarpley
   namespace: trippsc2
   role_name: rhel_first_steps
-  description: This role performs first steps on a freshly installed RHEL-based system.
+  description: 'DEPRECATED: Use trippsc2.first_steps.rhel instead.'
 
   license: MIT
 
-  min_ansible_version: '2.11'
+  min_ansible_version: '2.14'
 
   platforms:
     - name: EL
